@@ -1,0 +1,71 @@
+:root {
+  --color-primary: #c69963;
+  --color-primary-dark: #b28451;
+  --color-secondary: #101d2c;
+  --color-grey-light-1: #f9f7f6;
+  --color-grey-light-2: #aaa;
+  --color-grey-dark-1: #54483a;
+  --color-grey-dark-2: #6d5d4b;
+  --font-primary: "Nunito", sans-serif;
+  --font-display: "Josefin Sans", sans-serif; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [main-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [main-end] minmax(6rem, 1fr) [full-end];
+  font-family: var(--font-primary);
+  color: var(--color-grey-dark-2);
+  font-weight: 300;
+  line-height: 1.6; }
+  body > * {
+    padding: 4rem;
+    font-size: 3rem; }
+
+.features {
+  background-color: var(--color-grey-light-2);
+  grid-column: main-start / main-end;
+  grid-row: 2 / 3; }
+
+.footer {
+  background-color: var(--color-secondary);
+  grid-column: full-start / full-end; }
+
+.gallery {
+  background-color: var(--color-grey-dark-1);
+  grid-column: full-start / full-end; }
+
+.header {
+  background-color: var(--color-grey-dark-1);
+  grid-column: full-start / col-end 6; }
+
+.realtors {
+  background-color: var(--color-secondary);
+  grid-column: col-start 7 / full-end; }
+
+.real-estate {
+  background-color: var(--color-secondary);
+  grid-column: main-start / main-end; }
+
+.sidebar {
+  background-color: var(--color-primary);
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
+
+.testimonial__picture {
+  background-color: var(--color-primary);
+  grid-column: full-start / col-end 4; }
+
+.testimonial__content {
+  background-color: var(--color-grey-light-1);
+  grid-column: col-start 5 / full-end; }
