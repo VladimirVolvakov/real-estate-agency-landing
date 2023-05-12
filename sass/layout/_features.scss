@@ -1,5 +1,8 @@
 .features {
-  background-color: var(--color-grey-light-2);
   grid-column: main-start / main-end;
   grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+  margin: 15rem 0;  
 }

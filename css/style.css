@@ -28,14 +28,14 @@ body {
   color: var(--color-grey-dark-2);
   font-weight: 300;
   line-height: 1.6; }
-  body > * {
-    padding: 4rem;
-    font-size: 3rem; }
 
 .features {
-  background-color: var(--color-grey-light-2);
   grid-column: main-start / main-end;
-  grid-row: 2 / 3; }
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+  margin: 15rem 0; }
 
 .footer {
   background-color: var(--color-secondary);
