@@ -83,6 +83,9 @@ body {
   .feature__text {
     font-size: 1.7rem; }
 
+.home {
+  background-color: #f9f7f6; }
+
 .features {
   grid-column: main-start / main-end;
   grid-row: 2 / 3;
@@ -109,8 +112,11 @@ body {
   grid-column: col-start 7 / full-end; }
 
 .real-estate {
-  background-color: #101d2c;
-  grid-column: main-start / main-end; }
+  grid-column: main-start / main-end;
+  display: grid;
+  margin: 15rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 7rem; }
 
 .sidebar {
   background-color: #c69963;

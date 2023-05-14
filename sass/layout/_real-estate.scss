@@ -1,4 +1,7 @@
 .real-estate {
-  background-color: $color-secondary;
   grid-column: main-start / main-end;
+  display: grid;
+  margin: 15rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 7rem;
 }
