@@ -29,12 +29,38 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.heading-4 {
+  font-family: var(--font-display);
+  font-weight: 400; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: var(--color-grey-light-1); }
+  .heading-4--dark {
+    color: var(--color-grey-dark-1); }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem; }
+  .feature__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: var(--color-primary);
+    grid-row: 1 / span 2;
+    transform: translateY(-25%); }
+  .feature__text {
+    font-size: 1.7rem; }
+
 .features {
   grid-column: main-start / main-end;
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
+  align-items: start;
   margin: 15rem 0; }
 
 .footer {
