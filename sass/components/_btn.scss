@@ -1,9 +1,9 @@
 .btn {
-  background-color: var(--color-primary);
+  background-color: $color-primary;
   padding: 1.8rem 3rem;
-  font-family: var(--font-display);
+  font-family: $font-display;
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: $color-white;
   text-transform: uppercase;
   border: none;
   border-radius: 0;
@@ -11,6 +11,6 @@
   transition: all 0.3s;
 
   &:hover {
-    background-color: var(--color-primary-dark);
+    background-color: $color-primary-dark;
   }
 }

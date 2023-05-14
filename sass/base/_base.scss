@@ -1,16 +1,3 @@
-:root {
-  --color-primary: #c69963;
-  --color-primary-dark: #b28451;
-  --color-secondary: #101d2c;
-  --color-grey-light-1: #f9f7f6;
-  --color-grey-light-2: #aaa;
-  --color-grey-dark-1: #54483a;
-  --color-grey-dark-2: #6d5d4b;
-  --color-white: #fff;
-  --font-primary: "Nunito", sans-serif;
-  --font-display: "Josefin Sans", sans-serif;
-}
-
 *,
 *::after,
 *::before {
@@ -31,8 +18,8 @@ body {
     [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
     [main-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [main-end] minmax(6rem, 1fr) [full-end];
-  font-family: var(--font-primary);
-  color: var(--color-grey-dark-2);
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
   font-weight: 300;
   line-height: 1.6;
 }
