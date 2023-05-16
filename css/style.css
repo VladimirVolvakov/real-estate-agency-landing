@@ -251,7 +251,28 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+
+.nav-btn {
+  height: 0.2rem;
+  width: 4.5rem;
+  margin-top: 4rem;
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  cursor: pointer; }
+  .nav-btn::before, .nav-btn::after {
+    display: block;
+    content: "";
+    height: 0.2rem;
+    width: 4.5rem;
+    background-color: #fff; }
+  .nav-btn::before {
+    transform: translateY(-1.7rem); }
+  .nav-btn::after {
+    transform: translateY(1.5rem); }
 
 .testimonial__picture {
   background-image: linear-gradient(to right bottom, rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
