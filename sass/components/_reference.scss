@@ -1,0 +1,30 @@
+.reference {
+  &__text {
+    display: grid;
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+
+    &::before,
+    &::after {
+      display: block;
+      background-color: $color-grey-light-2;
+      content: "";
+      height: 1px;
+    }
+  }
+
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    justify-items: center;
+
+    img {
+      height: 2.5rem;
+      filter: brightness(70%);
+    }
+  }
+}
