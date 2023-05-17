@@ -7,4 +7,9 @@
   justify-items: center;
   align-content: center;
   row-gap: 2rem;
+
+  @media only screen and (max-width: $bp-800) {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
 }

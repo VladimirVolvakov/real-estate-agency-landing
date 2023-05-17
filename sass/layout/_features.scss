@@ -6,4 +6,15 @@
   grid-gap: 6rem;
   align-items: start;
   margin: 15rem 0;  
+
+  @media only screen and (max-width: $bp-1000) {
+    grid-row: 3 / 4;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    margin: 10rem 0;
+    padding: 0 5rem;
+  }
 }
