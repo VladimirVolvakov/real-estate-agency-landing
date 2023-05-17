@@ -190,6 +190,23 @@ body {
     height: 2.5rem;
     filter: brightness(70%); }
 
+.top-realtors__list {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 2rem;
+  row-gap: 5vh;
+  align-items: center; }
+
+.top-realtors__photo {
+  display: block;
+  width: 7rem;
+  border-radius: 50%; }
+
+.top-realtors__experience {
+  text-transform: uppercase;
+  color: #aaa;
+  margin-top: -0.3rem; }
+
 .features {
   grid-column: main-start / main-end;
   grid-row: 2 / 3;
@@ -281,7 +298,13 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  padding: 3rem;
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  row-gap: 2rem; }
 
 .real-estate {
   grid-column: main-start / main-end;

@@ -1,0 +1,21 @@
+.top-realtors {
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 2rem;
+    row-gap: 5vh;
+    align-items: center;
+  }
+
+  &__photo {
+    display: block;
+    width: 7rem;
+    border-radius: 50%;
+  }
+
+  &__experience {
+    text-transform: uppercase;
+    color: $color-grey-light-2;
+    margin-top: -0.3rem;
+  }
+}
